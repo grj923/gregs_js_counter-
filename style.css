@@ -3,6 +3,7 @@ body {
 }
 h1 {
   text-align: center;
+  background-color: cornsilk;
 }
 
 .topbutton {
@@ -57,5 +58,12 @@ h1 {
 #reset {
   position: relative;
   left: 35px;
-  top: 10px;
+  top: 8px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid black;
+}
+.container {
+  display: block;
+  position: relative;
+  margin: auto;
 }

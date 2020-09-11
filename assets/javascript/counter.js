@@ -29,11 +29,29 @@ decrementButton.addEventListener("click", function () {
   }
 });
 
-// let plusButton = document.("#plus");
-// let minusButton = document.querySelector("#minus");
-// let countertwoButton = document.querySelector("#countertwo");
-let resetButton = document.getElementById("#reset");
+let plusButton = document.querySelector("#plus");
+let minusButton = document.querySelector("#minus");
+let countertwoButton = document.querySelector("#countertwo");
+let resetButton = document.querySelector("#reset");
+
+plusButton.addEventListener("click", function () {
+  console.log("second + button clicked");
+  let newCounter2Value = Number(countertwo.innerHTML) + 1;
+  countertwo.innerHTML = newCounter2Value;
+});
+
+minusButton.addEventListener("click", function () {
+  console.log("second - button clicked");
+  let newCounter2Value = Number(countertwo.innerHTML) - 1;
+  if (countertwo.innerHTML > 0) {
+    countertwo.innerHTML = newCounter2Value;
+  }
+});
 
 resetButton.addEventListener("click", function () {
   console.log("I got it");
+  countertwo.innerHTML = 0;
+  if (confirm("Did You Want To Reset?")) {
+    txt = "resetting now";
+  }
 });
